@@ -11,5 +11,6 @@ scoreboard players set running time 0
 scoreboard players set first time 0
 scoreboard players set secn time 0
 scoreboard players set 60 time 60
+scoreboard players set 3600 time 3600
 bossbar set minecraft:timer value 0
 bossbar set minecraft:timer visible true

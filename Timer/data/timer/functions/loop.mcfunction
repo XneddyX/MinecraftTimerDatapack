@@ -3,8 +3,8 @@ execute if score tick time matches 0 if score hour time matches 0 if score min t
 execute if score tick time matches 0 if score hour time matches 0 if score min time matches 0 if score sec time matches 0 if score running time matches 1 run scoreboard players set first time 0
 execute if score tick time matches 0 if score hour time matches 0 if score min time matches 0 if score sec time matches 0 run scoreboard players set running time 0
 
-execute if score running time matches 1 if score first time <= running time run scoreboard players operation first time += min time
-execute if score running time matches 1 if score first time = min time run scoreboard players operation first time *= 60 time
+execute if score running time matches 1 if score first time <= running time run scoreboard players operation first time += hour time
+execute if score running time matches 1 if score first time = hour time run scoreboard players operation first time *= 3600 time
 
 execute if score running time matches 1 store result bossbar minecraft:timer max run scoreboard players get first time
 execute if score running time matches 1 store result bossbar minecraft:timer value run scoreboard players get secn time
